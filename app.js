@@ -1,3 +1,10 @@
+function showImage(imgElement){
+    var imageUrl = imgElement.src;
+    var postsDiv = document.getElementById("posts");
+    postsDiv.style.backgroundImage = `url("${imageUrl}")`;
+    postsDiv.style.backgroundSize ="cover";
+    postsDiv.style.backgroundPosition = "center";
+}
 
 function addPost() {
     var postTitle = document.getElementById("post-title");
@@ -6,8 +13,11 @@ function addPost() {
 
     if (postTitle.value.trim() && postDescrip.value.trim()) {
         posts.innerHTML += `
-        <div class="card">
-            <div class="card-header fontStyle">@Posts</div>
+        
+ <div class="card mb-3  " style="background: none; border-radius: 10px;">
+    <div class="card-header fontStyle">
+        @Posts
+    </div>
             <div class="card-body">
                 <h5 class="card-title fontStyle" id="updatedPost">${postTitle.value}</h5>
                 <p class="card-text fontStyle" id="updatedDescription">${postDescrip.value}</p>

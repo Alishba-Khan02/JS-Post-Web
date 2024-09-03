@@ -51,11 +51,24 @@
                             </div>
                             <button type="button" class="btn btn-primary mt-4 fontStyle color-blue" onclick="addPost()">Submit</button>
                         </form>
+
+
+
+                        <div class="image-row row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-12 ">
+                                <img src="images/img 2.jpg" alt="Image 1" onclick="showImage(this)">
+                            <img src="images/img 3.jpg" alt="Image 2" onclick="showImage(this)">
+                            <img src="images/img 4.jpg" alt="Image 3" onclick="showImage(this)">
+                            <img src="images/images (1).jpg" alt="Image 4" onclick="showImage(this)">
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
                 <!-- showing post -->
-                <div class="col-12 col-sm-12 col-md-8 "p-3   id="posts">
-
+                <div class="col-12 col-sm-12 col-md-8 p-3  border-green" id="posts">
+                    <div id="image-display" class="image-display"></div>
+                </div>
                 </div>
             </div>
         </div>
